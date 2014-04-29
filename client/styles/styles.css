@@ -1,8 +1,13 @@
+html {
+    height: 100%;
+}
+
 body {
     background: #eee;
     text-align: center;
     padding: 0 25px;
     font-family: arial, sans-serif;
+    height: calc(100% - 16px);
 }
 
 #main {
@@ -13,6 +18,7 @@ body {
     padding: 50px 60px;
     border: solid #ddd;
     border-width: 0 1px 1px 1px;
+    height: calc(100% - 101px);
 }
 
 #main h1 {
@@ -46,6 +52,11 @@ body {
     line-height: 13px;
 }
 
+#chats {
+    height: calc(100% - 145px);
+    overflow-y: auto;
+}
+
 form {
     padding: 20px;
     padding-left: 0;
@@ -60,6 +71,7 @@ form input[type=text] {
 }
 
 .chat {
+    list-style-type: none;
     padding: 5px;
     margin-bottom: 5px;
     background-color: #eee;
